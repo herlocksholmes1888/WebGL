@@ -110,6 +110,16 @@ const theta2 = 20 * Math.PI / 180;
 mat4.rotateY(modelMatrix, modelMatrix, theta2);
 mat4.rotateX(modelMatrix, modelMatrix, theta1);
 */
+
+/* ESCALA 
+const scaleMatrix1 = mat4.create();
+mat4.scale(scaleMatrix1, scaleMatrix1, [2.0, 1.0, 1.0]); 
+
+const scaleMatrix2 = mat4.create();
+mat4.scale(scaleMatrix2, scaleMatrix2, [1.0, 2.0, 1.0]);
+
+mat4.multiply(modelMatrix, scaleMatrix2, scaleMatrix1); 
+*/
 const modelMatrix = mat4.create();
 mat4.rotateY(modelMatrix, modelMatrix, Math.PI / 6); 
 mat4.rotateX(modelMatrix, modelMatrix, Math.PI / 6);
